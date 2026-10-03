@@ -1,0 +1,21 @@
+/* Every exercise appends its renderer to document.body, so keep the reset
+   to the bare minimum needed to avoid scrollbars. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  color: #eee;
+  font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+}

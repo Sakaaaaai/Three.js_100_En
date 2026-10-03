@@ -1,0 +1,10 @@
+node_modules
+dist
+.vite
+.DS_Store
+
+# 受講生に公開しない制作用ファイル（誤って配置しても追跡しない）
+HANDOFF.md
+PROGRESS.md
+_gen_stackblitz.py
+Exercise/

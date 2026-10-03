@@ -1,0 +1,147 @@
+/* The exercise switcher panel.
+   Exercises place their own UI at the top-left and along the bottom, so this
+   is pinned to the top-right to stay out of the way. */
+.tj-launcher {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 99999;
+  width: 260px;
+  padding: 10px;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  background: rgba(20, 20, 24, 0.92);
+  color: #eaeaea;
+  font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+.tj-launcher.is-collapsed {
+  width: auto;
+  padding: 6px 10px;
+}
+
+.tj-launcher.is-collapsed .tj-body {
+  display: none;
+}
+
+.tj-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tj-badge {
+  flex: 1;
+  font-weight: 700;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.tj-toggle {
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  background: #2a2a30;
+  color: #eaeaea;
+  cursor: pointer;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.tj-toggle:hover {
+  background: #3a3a44;
+}
+
+.tj-title {
+  margin: 8px 0;
+  color: #b9c7d6;
+  font-size: 11px;
+  max-height: 3.2em;
+  overflow: hidden;
+}
+
+.tj-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.tj-row select {
+  flex: 1;
+  min-width: 0;
+  padding: 4px;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  background: #1b1b20;
+  color: #eaeaea;
+  font-size: 12px;
+}
+
+.tj-nav {
+  width: 28px;
+  padding: 4px 0;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  background: #2a2a30;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+.tj-nav:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.tj-mode {
+  display: flex;
+  gap: 0;
+  margin-top: 8px;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tj-mode button {
+  flex: 1;
+  padding: 5px 0;
+  border: 0;
+  background: #1b1b20;
+  color: #9aa4ae;
+  cursor: pointer;
+  font-size: 11.5px;
+}
+
+.tj-mode button.is-active {
+  background: #2f6f4f;
+  color: #fff;
+  font-weight: 700;
+}
+
+.tj-file {
+  margin-top: 8px;
+  color: #7f8c99;
+  font-size: 10.5px;
+  word-break: break-all;
+}
+
+.tj-note {
+  margin-top: 8px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #2b2a1c;
+  color: #e8d9a0;
+  font-size: 11px;
+}
+
+.tj-note.is-error {
+  background: #3a1d1d;
+  color: #ffb4b4;
+  white-space: pre-wrap;
+  max-height: 150px;
+  overflow: auto;
+  font-family: ui-monospace, Consolas, monospace;
+}
