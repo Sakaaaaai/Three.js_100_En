@@ -11,10 +11,12 @@ The exercise repository for the Udemy course "Three.js 100 Drills".
 
 1. Open the link above. `npm install` and `npm run dev` run automatically
    (about 30 seconds the first time).
-2. Use the dropdown in the **panel at the top right** to pick an exercise (1-100).
+2. The preview shows an **index of all 100 exercises**. Click the one you want
+   (the search box at the top filters by number or keyword).
 3. The panel shows `Editing: src/exNN.js`. Open that file from the file tree on the left.
 4. Edit `src/exNN.js` and the preview on the right updates immediately.
 5. If you get stuck, press **Answer** in the panel to see the model answer.
+6. To move on, use **Index** in the panel, the dropdown, or the `‹` `›` buttons.
 
 > Recommended browsers: Chrome / Edge (Safari 16.4 or newer).
 > To keep the code you write, press `Fork` at the top right of StackBlitz

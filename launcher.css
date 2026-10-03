@@ -145,3 +145,109 @@
   overflow: auto;
   font-family: ui-monospace, Consolas, monospace;
 }
+
+/* ---- The index screen (shown when there is no ?q=) ---- */
+.tj-index {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+  height: 100%;
+  overflow-y: auto;
+  font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.tj-index h1 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+}
+
+.tj-index .tj-lead {
+  margin: 0 0 4px;
+  color: #9aa4ae;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.tj-index .tj-lead code {
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: #1f1f26;
+  color: #cfd8e3;
+  font-size: 12px;
+}
+
+.tj-search {
+  width: 100%;
+  margin: 18px 0 20px;
+  padding: 9px 12px;
+  border: 1px solid #3a3a44;
+  border-radius: 6px;
+  background: #15151a;
+  color: #eaeaea;
+  font-size: 14px;
+}
+
+.tj-search:focus {
+  border-color: #2f6f4f;
+  outline: none;
+}
+
+.tj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 10px;
+}
+
+.tj-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 11px 13px;
+  border: 1px solid #2c2c34;
+  border-radius: 7px;
+  background: #16161c;
+  color: #e6e6e6;
+  text-decoration: none;
+  transition: border-color 0.12s, background 0.12s;
+}
+
+.tj-card:hover {
+  border-color: #2f6f4f;
+  background: #1b2420;
+}
+
+.tj-card .tj-no {
+  flex: 0 0 auto;
+  min-width: 26px;
+  color: #6f8f7f;
+  font-weight: 700;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.tj-card .tj-name {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.tj-empty {
+  margin-top: 20px;
+  color: #8a949e;
+  font-size: 13px;
+}
+
+/* The 'back to index' button in the panel */
+.tj-home {
+  padding: 2px 8px;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  background: #2a2a30;
+  color: #eaeaea;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.tj-home:hover {
+  background: #3a3a44;
+}
